@@ -15,14 +15,11 @@ class Graphe
 		int get_nbSommets() const;
 		int get_nbArcs() const;
 		void add_Sommet(Sommet newSommet);
-		void add_Arc(Arc <A>* newArc);
-		
-	protected : 
-		int d_nbSommets;
-		int d_nbArcs;
+		void add_Arc(Arc newArc);
 		
 	private:
-		
+		int d_nbSommets;
+		int d_nbArcs;
 		std::vector <Sommet> d_vecteurSommets;
 		std::vector <Arc> d_vecteurArcs;	
 };
